@@ -13,7 +13,7 @@ The virtual env is activated by default. If the virtual env is not activated ,
 **you can activate the virtual env** by writing:
 
     workon quiz
-   #####**Installing dependecies**
+   ##### **Installing dependecies**
    In the root of the app write 
    
 
