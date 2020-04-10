@@ -1,5 +1,5 @@
 # # QuizApp-Tefaafrik
-This is the backend of the tefaafrik quiz app. The results is display from the build fontend app
+This is the backend of the tefaafrik quiz app. The results is displayed from the built fontend app
 #### Front End: [QuizApp-Tefaafrik-Frontend](https://github.com/nforesperance/QuizApp-Tefaafrik-Frontend.git)
 ## Setup
 **Install a Virtual Environment**
