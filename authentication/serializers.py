@@ -1,4 +1,4 @@
-from .models import CustomUser
+from .models import *
 from rest_framework import serializers
 from rest_framework_simplejwt.serializers import TokenObtainPairSerializer
 
@@ -21,16 +21,15 @@ class CustomUserSerializer(serializers.ModelSerializer):
     """
     Currently unused in preference of the below.
     """
-    email = serializers.EmailField(
-        required=True
-    )
+    # email = serializers.EmailField(
+    #     required=True
+    # )
     username = serializers.CharField()
-    password = serializers.CharField(min_length=8, write_only=True)
+    # password = serializers.CharField(min_length=8, write_only=True)
 
     class Meta:
         model = CustomUser
-        fields = ('email', 'username', 'password')
-        extra_kwargs = {'password': {'write_only': True}}
+        fields = ('username', 'password','first_name','last_name','contact','id')
 
     def create(self, validated_data):
         password = validated_data.pop('password', None)
@@ -40,3 +39,7 @@ class CustomUserSerializer(serializers.ModelSerializer):
             instance.set_password(password)
         instance.save()
         return instance
+class ForfaitSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Forfait
+        fields = '__all__'
