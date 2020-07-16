@@ -1,6 +1,4 @@
 # Wiagate Backend
-This is the backend of the tefaafrik quiz app. The results is displayed from the built fontend app
-#### Front End: [QuizApp-Frontend](https://github.com/nforesperance/QuizApp-Frontend.git)
 ## Setup
 **Install a Virtual Environment**
 
