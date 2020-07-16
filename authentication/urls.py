@@ -11,6 +11,7 @@ from .api import *
 router = DefaultRouter()
 router.register(r'signup', SignUpViewset, basename='sign-up')
 router.register(r'forfait', ForfaitViewset, basename='forfait')
+router.register(r'login', LoginViewset, basename='login')
 
 urlpatterns = [
     path(r'user/', include(router.urls)),
